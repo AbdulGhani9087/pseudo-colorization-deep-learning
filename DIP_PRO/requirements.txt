@@ -1,0 +1,25 @@
+# Core dependencies for DIP_PRO project
+# Pin numpy <2 to avoid binary-compat issues with some compiled extensions.
+numpy>=1.24,<2
+Pillow>=9.0
+matplotlib>=3.6
+scikit-image>=0.20
+torchvision>=0.16
+tqdm>=4.64
+
+
+# Optional (recommended for improved color-difference metric):
+# colormath provides CIEDE2000 implementation used in `src/eval.py`
+colormath>=3.0
+
+# Optional: Triang model (PyTorch). Install the build matching your platform.
+# torch>=2.1
+# torchvision>=0.16
+
+# Optional: OpenCV for additional image I/O / formats. Import is optional in GUI.
+# Use opencv-python-headless if you don't need GUI support from OpenCV.
+# opencv-python>=4.7
+# opencv-python-headless>=4.7
+
+# To install all required packages (including optionals), run:
+# pip install -r requirements.txt
